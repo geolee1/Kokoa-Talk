@@ -10,6 +10,7 @@
 @import "friends.css";
 @import "chat.css";
 
+@import "music.css";
 * {
   box-sizing: border-box;
 }

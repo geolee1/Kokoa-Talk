@@ -1,0 +1,147 @@
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: 710px;
+}
+
+.playlist::-webkit-scrollbar {
+  width: 0;
+}
+
+.playlist__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.playlist__cover {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 15px 30px -10px lightcoral;
+}
+
+.playlist__title {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.playlist__subtitle {
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 5px;
+  opacity: 60%;
+}
+
+.playlist__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  width: 90%;
+}
+
+.playlist__btns > div {
+  width: 47%;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 15px -5px lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.playlist__shuffle {
+  background-color: black;
+  color: white;
+}
+
+.playlist__likes i {
+  color: red;
+  margin-right: 5px;
+}
+
+.playlist__songs {
+  margin-bottom: 50px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+.song--now-play {
+  box-shadow: 0 0 15px -5px lightgray;
+}
+
+.song--now-play .song__cover {
+  filter: brightness(50%);
+}
+
+.song__cover-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.song__cover {
+  width: 50px;
+}
+
+.song__cover-wrapper .fa-chart-simple {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+}
+.song--now-play .fa-chart-simple {
+  visibility: visible;
+}
+
+.song__info {
+  width: 100%;
+  margin-left: 5px;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.song__subtitle {
+  opacity: 70%;
+}
+
+.song__title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.small-player {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  opacity: 90%;
+  color: white;
+  width: 90%;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.small-player__controller {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
