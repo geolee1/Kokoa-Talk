@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --container-color: #aefd6c;
-  --simbol-color: #000000e6
+  --theme-color: #aefd6c;
+  --simbol-color: rgba(0, 0, 0, 0.7);
   --label-color: #35281e;
+  --placeholder-color: rgba(0, 0, 0, 0.2);
 }
 
 body {

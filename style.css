@@ -1,6 +1,8 @@
 @import "reset.css";
 @import "theme.css";
 
+@import "statusbar.css";
+
 @import "welcome.css";
 @import "friends.css";
 @import "chat.css";
@@ -8,41 +10,10 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   height: 100dvh;
 }
 
-.status-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 16px;
-}
-
-.status-bar span {
-  font-size: 18px;
-  padding-right: 5px;
-}
-
-.status-bar__camera {
-  height: 20px;
-  width: 20px;
-  border-radius: 10px;
-  background-color: black;
-}
-
 .content-wrapper {
   padding: 16px;
-}
-
-@media screen and (max-width: 767px) {
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
-@media screen and (min-width: 1024px) {
-  .status-bar {
-    display: none;
-  }
 }

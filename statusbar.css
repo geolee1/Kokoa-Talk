@@ -1,0 +1,38 @@
+.status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.status-bar__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-bar__section * {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.status-bar--no-margin {
+  margin: 0;
+}
+
+.status-bar img {
+  height: 20px;
+}
+
+.status-bar__camera {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .status-bar {
+    display: none;
+  }
+}
