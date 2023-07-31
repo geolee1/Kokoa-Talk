@@ -1,9 +1,14 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
+  z-index: 99;
+  background-color: white;
 }
 
 .status-bar__section {
@@ -31,8 +36,17 @@
   background-color: black;
 }
 
+.content-wrapper {
+  margin-top: 40px;
+  height: calc(100dvh - 105px);
+}
+
 @media screen and (min-width: 1024px) {
   .status-bar {
     display: none;
+  }
+  .content-wrapper {
+    margin-top: 0;
+    height: calc(100dvh - 55px);
   }
 }

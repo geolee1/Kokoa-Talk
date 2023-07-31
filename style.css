@@ -19,11 +19,22 @@ body {
 }
 
 .content-wrapper {
-  padding: 5px 16px;
+  display: block;
+  overflow: scroll;
+  position: relative;
+  padding: 0 16px;
   width: 100%;
 }
 
+.content-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
 @media screen and (max-width: 767px) {
+  .large-view {
+    display: flex;
+    justify-content: center;
+  }
   .chat-wrapper {
     visibility: hidden;
   }

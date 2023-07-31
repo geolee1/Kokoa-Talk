@@ -1,8 +1,11 @@
 .content-header {
   display: flex;
-  position: inherit;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  padding: 5px 0;
 }
 
 .content-header__title {
@@ -18,4 +21,5 @@
 
 .content-header__icons i {
   margin-left: 10px;
+  cursor: pointer;
 }

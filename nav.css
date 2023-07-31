@@ -1,12 +1,11 @@
 .nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: inherit;
-  background-color: var(--placeholder-color);
+  background-color: lightgray;
   padding: 0 16px;
 }
 .nav > a {
@@ -15,4 +14,16 @@
   font-size: 25px;
   color: var(--simbol-color);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav {
+    left: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    width: 512px;
+    right: 50%;
+  }
 }
