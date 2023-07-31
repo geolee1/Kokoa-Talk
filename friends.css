@@ -1,0 +1,33 @@
+@keyframes introBackground {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.intro-logo {
+  border-radius: 100px;
+  background-color: var(--theme-color);
+  color: var(--simbol-color);
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  animation: introBackground 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 1024px) {
+}
