@@ -1,0 +1,11 @@
+.chat-wrapper {
+  height: calc(100dvh - 40px);
+  background-color: var(--theme-color);
+  opacity: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .chat-wrapper {
+    height: 100dvh;
+  }
+}

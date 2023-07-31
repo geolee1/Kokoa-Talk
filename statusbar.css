@@ -38,7 +38,7 @@
 
 .content-wrapper {
   margin-top: 40px;
-  height: calc(100dvh - 105px);
+  height: calc(100dvh - 88px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -47,6 +47,6 @@
   }
   .content-wrapper {
     margin-top: 0;
-    height: calc(100dvh - 55px);
+    height: calc(100dvh - 48px);
   }
 }
